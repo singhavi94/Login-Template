@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	  <link rel="icon" href="image/18.png" height="10px">
+	  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	  <meta name="keywords" content="operation,requirements,logistics,organization" />
+	  <meta name="description" content="Logistics is generally the detailed organization and implementation of a complex operation. In a general business sense, logistics is the management of the flow of things between the point of origin and the point of consumption in order to meet requirements of customers or corporations." />
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	  <script type="text/javascript" src="engine1/jquery.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link href='https://fonts.googleapis.com/css?family=Carter One' rel='stylesheet'>
+	  <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'>
+	  <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+	body
+	{
+	background-image: url(image/backcurve01.png);
+	background-repeat: no-repeat; 
+	}
+	.heading_text h2{padding-top: 30px;}
+ 
+</style>
+<body onload="myFunction()" style="margin:0;">
+
+ <div id="loader">
+    
+    <div class="row">
+        <div class="col-lg-5 col-xs-4" style="background-color:;"></div>
+        <div class="col-lg-2 col-xs-4" style="background-color:;">
+          <img src="image/08.gif" width="100%">
+        </div>
+        <div class="col-lg-5 col-xs-4" style="background-color:;"></div>
+      </div>
+<br><br>
+      <div class="row">
+        <div class="col-lg-5 col-xs-12" style="background-color:;"></div>
+        <div class="col-lg-4 col-xs-12" style="background-color:;">
+          
+          <div class="heading_text">
+            <h2 data-text="Loading Please Wait...">Loading Please Wait...</h2>
+          </div>
+        </div>
+        <div class="col-lg-3 col-xs-12" style="background-color:;"></div>
+      </div>
+    
+  </div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<div class="admin_login">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<div class="well">
+					 <div class="row" style="margin-left: 0px;margin-right: 0px;">
+						<div class="col-lg-6 col-xs-6" style="background-color:#ff8a00;height: 500px;border-top-left-radius: 10px; 
+							border-bottom-left-radius: 10px;">
+							<div class="left_side">
+								<div class="row">
+									<div class="col-lg-1 col-xs-1"></div>
+									<div class="col-lg-10 col-xs-10">
+										<div class="heading_text">
+											<h2 style="color: white;font-size: 26px;">The Electric Car Pledge</h2>
+										</div>
+									</div>	
+									<div class="col-lg-1 col-xs-1"></div>
+								</div>
+								<div class="row">
+									<div class="heading_img">
+										<div class="col-lg-1 col-xs-1"></div>
+										<div class="col-lg-10 col-xs-10" style="background-color:;">
+											<img src="image/14.png" width="100%">
+										</div>
+										<div class="col-lg-1 col-xs-1"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="icon_with_def">
+										<div class="col-lg-4 col-xs-6" style="background-color:;padding-right: 0px;">
+											<i class="fa fa-car"></i><p>Learn to drive</p>
+										</div>
+										<div class="col-lg-4 col-xs-6" style="background-color:;padding-right: 5px;">
+											<i class="fa fa-car"></i> <p>Learn to drive</p>
+										</div>
+										<div class="col-lg-4 col-xs-6" style="background-color:;padding-right: 5px;">
+											<i class="fa fa-car"></i><p>Learn to drive</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xs-6" style="background-color: ;">
+							<div class="right_side">
+					  			<div class="row">
+									<div class="col-lg-12">
+										<div class="heading_text">
+											<h2>Login</h2>
+											<p>Don't have an Account ? <a href="register.html"> Create your Account.</a></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-1"></div>
+									<div class="col-lg-10">
+										<div class="form-group">
+											<label>Email / Username</label>
+											<input type="text" name="username" class="form-control">
+										</div>
+									</div>
+									<div class="col-lg-1"></div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-1"></div>
+									<div class="col-lg-10">
+										<div class="form-group">
+											<label>Password</label>
+											<input type="password" name="password" class="form-control">
+										</div>
+									</div>
+									<div class="col-lg-1"></div>
+								</div>
+
+								<div class="row" style="padding-top: 20px;">
+									<div class="col-lg-1"></div>
+									<div class="col-lg-1 col-xs-1" style="background-color:">
+										<div class="form-group">
+											<input type="checkbox" name="password">
+										</div>
+									</div>
+									<div class="col-lg-5 col-xs-5" style="background-color:">
+										<p style="text-align: left;padding-top: 0px;">Remember Me</p>				
+									</div>
+									<div class="col-lg-5 col-xs-5"><p style="text-align: left;padding-top: 0px;"><a href="forgotPass.html">Forgot Password ?</a></p></div>
+									
+									<div class="col-lg-1"></div>
+								</div>
+
+								<div class="row">
+									<div class="col-lg-1"></div>
+									<div class="col-lg-5 col-xs-12">
+										<button class="btn btn-success btn-block" type="submit" name="save">Login</button>
+									</div>
+									<div class="col-lg-5">
+										 
+									</div>
+									<div class="col-lg-1"></div>
+								</div>
+					  		</div>
+						</div>
+						</div>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+			<div class="row">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-9">
+					<div class="footer_text">
+						<h2 style="color: #ff8a00;letter-spacing: 2px;text-align:left">Whatever Your Goal - We'll Get You There</h2>
+					</div>
+				</div>
+				 
+			</div>
+	</div>
+</div>
+ 
+
+  </div>     <!--loader-->  
+ <script>
+var myVar;
+function myFunction() {
+  myVar = setTimeout(showPage, 6000);
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script> 
+</body>
+</html>
